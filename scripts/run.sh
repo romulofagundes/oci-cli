@@ -16,4 +16,4 @@ oci setup repair-file-permissions --file /home/oci/.oci/config
 oci ce cluster create-kubeconfig --cluster-id ${OCI_CLUSTER_ID} --region ${OCI_CLI_REGION} --token-version 2.0.0
 
 #Execução dos comandos que vierem como parâmetro.
-$@
+#$@ #comentado para evitar erro do gitlab - ci/cd.
