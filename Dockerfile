@@ -14,6 +14,3 @@ USER oci
 WORKDIR /home/oci
 COPY ./scripts/run.sh .
 RUN mkdir /home/oci/.oci
-
-ENTRYPOINT [ "/home/oci/run.sh" ]
-  
