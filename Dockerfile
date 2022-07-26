@@ -11,7 +11,8 @@ RUN apk add --no-cache build-base libffi-dev openssl-dev curl \
   && tar zxvf helm-v3.9.2-linux-amd64.tar.gz \
   && mv linux-amd64/helm /usr/local/bin \
   && rm -Rf linux-amd64 \
-  && mv kubectl /usr/local/bin
+  && mv kubectl /usr/local/bin \
+  && chmod +x /usr/local/bin/kubectl
 
 USER oci
 WORKDIR /home/oci
